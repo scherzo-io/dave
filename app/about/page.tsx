@@ -4,7 +4,7 @@ export default function About() {
       <div className="max-w-4xl mx-auto px-8 text-center">
         <h1 className="text-white text-6xl font-bold mb-8">About</h1>
         <p className="text-gray-300 text-lg">
-          Welcome to Dave's website. This is the about page.
+          Welcome to Dave's website. You Can Never Leave.
         </p>
       </div>
     </div>

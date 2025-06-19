@@ -24,3 +24,64 @@ body {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Mobile-specific optimizations */
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent text selection on interactive elements */
+button, 
+a,
+.select-none {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Improve touch target sizes */
+button {
+  touch-action: manipulation;
+}
+
+/* Prevent pull-to-refresh on Chrome Android */
+body {
+  overscroll-behavior-y: contain;
+}
+
+/* Ensure inputs don't zoom on iOS */
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better focus styles for mobile */
+:focus {
+  outline: 2px solid #ec4899;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  /* Ensure minimum touch target size */
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

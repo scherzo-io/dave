@@ -38,9 +38,9 @@ export default function Home() {
       
       {/* Content */}
       <div style={{ position: 'relative', zIndex: 2, minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-        <h1 className="text-white text-8xl font-bold mb-8 drop-shadow-2xl">Dave</h1>
+        <h1 className="text-white text-8xl font-bold mb-8 drop-shadow-2xl">Sins of the Player</h1>
         <Link 
-          href="/about"
+          href="/games"
           className="text-white text-xl border-2 border-white px-8 py-3 hover:bg-white hover:text-black transition-colors"
         >
           enter
